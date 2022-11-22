@@ -1,4 +1,12 @@
 .Header{
+    align-items: center;
     background: #0042BE;
+    display: flex;
+}
+
+.Header a {
     color: #ffffff;
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: "Roboto500", sans-serif;
 }
