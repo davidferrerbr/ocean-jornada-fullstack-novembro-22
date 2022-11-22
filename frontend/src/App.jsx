@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 
 import './App.css'
 import ReadAll from "./components/ReadAll/ReadAll"
-import ItemCard from "./components/ItemCard/ItemCard"
+import Create from "./components/Create/Create"
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ReadAll />} />
 
-          <Route path="/adicionar" element={<ItemCard />} />
+          <Route path="/adicionar" element={<Create />} />
         </Routes>
       </div>
 
