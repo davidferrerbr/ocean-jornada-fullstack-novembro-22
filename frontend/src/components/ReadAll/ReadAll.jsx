@@ -4,7 +4,16 @@ import "./ReadAll.css"
 function ReadAll() {
     return (
         <div className="ReadAll">
-            <ItemCard />
+            <ItemCard item={{
+                _id: "1234", 
+                nome: "Item 1",
+                imagemUri: "https://picsum.photos/201/201"
+            }} />
+            <ItemCard item={{
+                _id: "9999", 
+                nome: "Item 2",
+                imagemUri: "https://picsum.photos/200/200"
+            }} />
         </div>
     )
 }
