@@ -6,7 +6,7 @@ export const Api = {
         endpoint: () => {
             return Api.baseUrl + "itens";
         },
-        readAll: () => {
+        readAll: function () {
             return this.endpoint() + "/";
         },
     },

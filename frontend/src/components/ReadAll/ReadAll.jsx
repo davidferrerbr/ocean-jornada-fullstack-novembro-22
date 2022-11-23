@@ -1,3 +1,4 @@
+import { Api } from "../../api/api";
 import ItemCard from "../ItemCard/ItemCard";
 import "./ReadAll.css"
 
@@ -19,6 +20,10 @@ function ReadAll() {
             imagemUri: "https://picsum.photos/202/202"
         }
     ];
+
+    const readAllUrl = Api.itens.readAll();
+    console.log(readAllUrl);
+    Api.buildApiGetRequest(readAllUrl);
 
     return (
         <div className="ReadAll">
