@@ -2,10 +2,11 @@ import { Route, Routes } from "react-router-dom"
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-
-import './App.css'
 import ReadAll from "./components/ReadAll/ReadAll"
 import Create from "./components/Create/Create"
+
+import './App.css'
+
 
 function App() {
   return (
