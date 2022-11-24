@@ -18,6 +18,8 @@ function App() {
           <Route path="/" element={<ReadAll />} />
 
           <Route path="/adicionar" element={<Create />} />
+          
+          <Route path="/visualizar/:id" element={<Create />} />
 
           {/* CRIAR UMA ROTA PARA O READBYID, INTEGRADO COM BACKEND */}
           {/* <Route path="/visualizar/:id" element={<Create />} /> */}
