@@ -56,7 +56,7 @@ app.post("/itens", async function (req, res) {
   await collection.insertOne(item);
 
   // Exibimos uma mensagem de sucesso
-  res.send("Item criado com sucesso!");
+  res.send({ message: "Item criado com sucesso!" });
 });
 
 // Endpoint [GET] /itens/:id - READ BY ID (Ler pelo ID)
@@ -90,7 +90,7 @@ app.put("/itens/:id", async function (req, res) {
       $set: item,
     });
 
-  res.send("Item atualizado com sucesso!");
+  res.send({ message:"Item atualizado com sucesso!" });
 });
 
 // Endpoint [DELETE] /itens/:id - DELETE BY ID (Remover pelo ID)
@@ -108,7 +108,7 @@ app.delete("/itens/:id", async function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log("Servidor rodando em http://localhost:3000");
+  console.log({ message: "Servidor rodando em http://localhost:3000" });
 });
 }
 main();
