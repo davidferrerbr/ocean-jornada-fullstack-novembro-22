@@ -1,18 +1,18 @@
 import "./Header.css"
-import Brand from "../../assets/Brand.svg";
+import Brand from "../../assets/brand.svg";
 
 function Header (){
     return (
         <div className="Header">
-            <a href="/">
+            <link to="/">
                 <img src={Brand} width={32} height={32} alt="Samsung Ocean Logo" />
-            </a>
-            <a href="/">listar
+            </link>
+            <link to="/">listar
 
-            </a>
-            <a href="/adicionar">Adicionar
+            </link>
+            <link to="/adicionar">Adicionar
                 
-            </a>
+            </link>
 
         </div>
     )
