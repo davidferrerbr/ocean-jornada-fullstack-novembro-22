@@ -1,6 +1,6 @@
 import "./ItemCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEdit, faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { Api } from "../../api/api";
 import { useNavigate } from "react-router-dom";
 
@@ -27,7 +27,7 @@ function ItemCard(props){
     }
     return (
         <div className="ItemCard">
-            <FontAwesomeIcon icon={faEdit} />
+            {/* <FontAwesomeIcon icon={faEdit} /> */}
             <FontAwesomeIcon onClick={excluirItem} className="icon-delete" icon={faTrashCan} />
             <h1>{item.nome}</h1>
             <img src={item.imagemUrl} alt={`Imagem do Item ${item.nome}`} width={200} height={200} />
