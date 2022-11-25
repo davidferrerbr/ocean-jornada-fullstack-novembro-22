@@ -90,7 +90,7 @@ app.put("/itens/:id", async function (req, res) {
       $set: item,
     });
 
-  res.send({ message:"Item atualizado com sucesso!" });
+  res.send({ message: "Item atualizado com sucesso!" });
 });
 
 // Endpoint [DELETE] /itens/:id - DELETE BY ID (Remover pelo ID)
@@ -104,7 +104,7 @@ app.delete("/itens/:id", async function (req, res) {
   });
 
   // Exibimos uma mensagem de sucesso
-  res.send("Item removido com sucesso!");
+  res.send({ message: "Item removido com sucesso!" });
 });
 
 app.listen(process.env.PORT || 3000, function () {

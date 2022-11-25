@@ -10,7 +10,10 @@ export const Api = {
             return this.endpoint() + "/";
         },
         create: function() {
-            return this.endpoint() + "/";  sw
+            return this.endpoint() + "/";
+        },
+        delete: function(id) {
+            return this.endpoint() + "/" + id; 
         },
     },
 
@@ -30,6 +33,13 @@ export const Api = {
             headers: new Headers({
                 "Content-type": "application/json",
             })
+        });
+    },
+
+    // GET
+    buildApiDeleteRequest: (url) => {
+        return fetch(url, {
+            method: "DELETE",
         });
     },
 };
